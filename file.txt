@@ -1,0 +1,18 @@
+5
+PROPERTY color red
+FILE photo C:\Users\keyf\cacheLab\smile.jpg
+PROPERTY color green
+FILE photo C:\Users\keyf\cacheLab\smile1.jpg
+PROPERTY color green
+PROPERTY color green
+PROPERTY color green
+PROPERTY color green
+PROPERTY color green
+PROPERTY name1 val1
+PROPERTY name1 val2
+PROPERTY name2 val1
+PROPERTY name2 val1
+PROPERTY name3 val3
+PROPERTY name3 val1
+PROPERTY name4 val4
+PROPERTY name4 val4
