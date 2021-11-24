@@ -15,12 +15,10 @@ public class Main {
         int size = Integer.valueOf(in.next());
         in.nextLine();
         Cache testCache = new Cache(size);
-        String line;
         while (in.hasNext()) { // Построчно читаем из файла и парсим нужные значения
-            line = in.nextLine();
-            String value = line.substring(line.lastIndexOf(" ") + 1);
-            String key = line.substring(line.indexOf(" ") + 1, line.lastIndexOf(" "));
-            String type = line.substring(0, line.indexOf(" "));
+            String type = in.next();
+            String key = in.next();
+            String value = in.next();
             testCache.addRecord(key, value, type);
         }
         fileReader.close();
