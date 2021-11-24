@@ -3,7 +3,7 @@ PROPERTY color red
 FILE photo C:\Users\keyf\cacheLab\smile.jpg
 PROPERTY color green
 FILE photo C:\Users\keyf\cacheLab\smile1.jpg
-PROPERTY color green
+PROPERTY photo green
 PROPERTY color green
 PROPERTY color green
 PROPERTY color green

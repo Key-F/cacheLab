@@ -1,39 +1,23 @@
 package com.company.lab;
 
 
-import java.util.HashMap;
 
 class Record {
-    String value;
-    int accessNum;
-    String type;
+    private Content content;
+    private int accessNum;
 
 
-    Record(){}
     Record(String value, int accessNum, String type){
-        this.value = value;
+        content = new Content(type, value);
         this.accessNum = accessNum;
-        this.type = type;
-    }
-
-    Record updateRecord(HashMap<String, Record> recordSet, String key, String value){
-        Record oldRecord = recordSet.get(key);
-        if (oldRecord.getValue().equals(value))
-            oldRecord.incrementAcc(); // Если значения равны, то увеличиваем счетчик
-        else { // Если не равны, пишем новое значение + сбрасываем счетчик
-            oldRecord.setAccessNum(0);
-            oldRecord.setValue(value);
-        }
-        return oldRecord;
-
     }
 
     int getAccessNum(){
         return accessNum;
     }
 
-    String getValue(){
-        return value;
+    Content getValue(){
+        return content;
     }
 
     void setAccessNum(int accessNum) {
@@ -41,7 +25,11 @@ class Record {
     }
 
     void setValue(String value) {
-        this.value = value;
+        this.content.setValue(value);
+    }
+
+    void updateContent(String type, String value){
+        content = new Content(type, value);
     }
 
     void incrementAcc(){
@@ -49,7 +37,8 @@ class Record {
     }
 
     void printValue(){
-        System.out.println("Тип: " + type + " Значение: " + value + " Количество обращений: " + accessNum);
+        this.content.printValue();
+        System.out.println(" Количество обращений: " + accessNum);
     }
 }
 
